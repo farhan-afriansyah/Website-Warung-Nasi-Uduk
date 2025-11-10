@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAV */
+.nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 15px 20px;
+    z-index: 1000;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* nav logo */
+.nav-logo
+{
+    font-size: 1.4em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #4a2c22;
+}
+/* nav logo */
+
+/* nav menu */
+#menu-list
+{
+    margin-bottom: 10px;
+}
+
+#menu-list ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+#menu-list ul li
+{
+    margin: 0 8px;
+}
+
+#menu-list ul li a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    border-bottom: 2px solid transparent;    
+    padding-bottom: 3px;
+    transition: border-bottom 0.3s ease;
+}
+
+#menu-list ul li a:hover
+{
+    /* background-color: seagreen;
+    color: black;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer; */
+    
+    font-size: 1.3em;
+    border-bottom: 2px solid #4a2c22;
+}
+/* nav menu */
+
+/* nav button */
+.nav-button button
+{
+    background-color: seagreen;
+    margin: 0 8px;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.nav-button button:hover
+{
+    background-color: aquamarine;
+    color: black;
+}
+
+/* nav button */
+/* NAV */
+
+/* HERO */
+.hero
+{
+    height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),url(hero.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hero-content
+{
+    padding: 20px;
+    color: white;
+}
+
+.hero-content h2
+{
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero-content button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.hero-content button:hover
+{
+    background-color: seagreen;
+}
+/* HERO */
+
+/* MENU */
+#menu
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 30px;
+    padding: 50px;
+    gap: 40px;
+}
+
+.menu-text
+{
+    flex: 1;
+    max-width: 400px;
+    text-align: center;
+}
+
+.menu-text h2
+{
+    text-align: center;
+    color: #4a2c22;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.menu-text p
+{
+    text-align: center;
+    color: #8d7063;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.read-more-btn
+{
+    background-color: seagreen;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+.read-more-btn:hover
+{
+    background-color: aquamarine;
+    color: black;
+}
+
+.menu-list
+{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 80px;
+    margin-left: 50px;
+}
+
+.icon-item
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 120px;
+}
+
+.icon-image
+{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.icon-item span
+{
+    color: #4a2c22;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1.3;
+}
+
+/* corousel */
+
+.card-container 
+{
+    justify-content: center;   /* Menyusun card secara horizontal di tengah */
+    align-items: center;       /* Menyusun card secara vertikal di tengah */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.judul
+{
+    font-size: 1.5em;
+    text-decoration: underline;
+    padding-bottom: 3px;
+    margin-bottom: 20px;
+
+}
+
+.list-container
+{
+    display: flex;
+    justify-content: center;   /* Menyusun card secara horizontal di tengah */
+    align-items: center;       /* Menyusun card secara vertikal di tengah */
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;                 /* Jarak antar card */
+    max-width: 1500px;          /* Membatasi lebar container */
+    /* min-height: 100vh;         Membuat container setinggi viewport */
+    margin: 0 auto;
+}
+
+.card-list
+{
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card-list:hover {
+    transform: translateY(-10px);
+}
+
+.card-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.card-button
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.card-btn {
+    width: 120px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#order
+{
+    background-color: seagreen;
+    color: white;
+}
+
+#cart
+{
+    background-color: steelblue;
+    color: white;
+}
+
+#order:hover
+{
+    background-color: limegreen;
+    color: black;
+}
+
+#cart:hover {
+    background-color: cornflowerblue;
+}
+
+/* corousel */
+
+/* MENU */
+
+/* ABOUT */
+
+.about-container
+{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* ABOUT */
